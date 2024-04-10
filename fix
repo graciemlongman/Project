@@ -1,0 +1,6 @@
+#!/bin/bash
+
+for new_in in "$@"; do 
+  cp "$new_in" "zz_$new_in"
+  sed -i "s/.chk/zz.chk/g" "zz_$new_in"
+done

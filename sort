@@ -1,0 +1,13 @@
+#!/bin/bash
+
+if grep -q "Normal termination" "$@"; then
+  cp "$@" log_norm_term/
+fi
+      
+
+
+
+
+
+
+
